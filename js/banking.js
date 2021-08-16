@@ -14,9 +14,9 @@ function getInput() {
 document.getElementById('deposit-button').addEventListener('click', function () {
 
     //get current deposit
-    const depositAmount = getInput();
-    const depositTotal = document.getElementById('deposit-total');
-    const depositTotalText = depositTotal.innerText;
+    const depositAmount = getInput('deposit-total');
+    // const depositTotal = document.getElementById('deposit-total');
+    // const depositTotalText = depositTotal.innerText;
     const previousDepositTotal = parseFloat(depositTotalText);
     depositTotal.innerText = previousDepositTotal + depositAmount;
     //update balance
