@@ -1,12 +1,12 @@
 //get input from function
 
-function getInput() {
-    const depositInput = document.getElementById('deposit-input');
-    const depositAmountText = depositInput.value;
-    const depositAmount = parseFloat(depositAmountText);
+function getInputValue(getInputId) {
+    const inputField = document.getElementById(getInputId);
+    const AmountText = inputField.value;
+    const Amount = parseFloat(AmountText);
     //clear input field
-    depositInput.value = '';
-    return depositAmount;
+    inputField.value = '';
+    return Amount;
 
 }
 
@@ -35,6 +35,7 @@ document.getElementById('deposit-button').addEventListener('click', function () 
 document.getElementById('withdraw-button').addEventListener('click', function () {
     const withdrawInput = document.getElementById('withdraw-input');
     const withdrawAmountText = withdrawInput.value;
+    const withdrawAmount = parseFloat(withdrawAmountText);
     //update withdraw total
 
     const withdrawTotal = document.getElementById('withdraw-total');
