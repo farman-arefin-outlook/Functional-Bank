@@ -1,6 +1,7 @@
 //get input from function
 
 function getInputValue(getInputId) {
+    debugger;
     const inputField = document.getElementById(getInputId);
     const AmountText = inputField.value;
     const Amount = parseFloat(AmountText);
@@ -12,9 +13,10 @@ function getInputValue(getInputId) {
 
 
 function totalField(totalAmountId, Amount) {
+    debugger;
     const Total = document.getElementById(totalAmountId);
     const TotalText = Total.innerText;
-    const previousTotal = parseFloat(depositTotalText);
+    const previousTotal = parseFloat(TotalText);
     Total.innerText = previousTotal + Amount;
 }
 
